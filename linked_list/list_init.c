@@ -19,3 +19,8 @@ void list_init(List *list, void (*destroy)(void *))
 
     return;
 }
+
+// must be present in one of the source files to avoid winMain error
+int main(){
+
+}

@@ -1,18 +1,18 @@
 #ifndef LISTS_H
 #define LISTS_H
 
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * description:  define a structure for linked list elements
- * @ListElem: individual element to a linked list
+ * @ListElem_: individual element to a linked list
  * @List: linked list data structure
  *
  */
 
-typedef struct ListElem {
+typedef struct ListElem_ {
   void *data;
-  struct ListElem *next;
+  struct ListElem_ *next;
 } ListElem;
 
 /**
@@ -26,7 +26,7 @@ typedef struct ListElem {
  *
  */
 
-typedef struct List
+typedef struct List_
 {
     int size;
     int (*match)(const void *key1, const void *key2);
