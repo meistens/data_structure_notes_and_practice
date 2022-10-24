@@ -31,9 +31,7 @@ int main(int argc, char *argv[]) {
   elem1.next->next->data = 45;
   elem1.next->next->next = NULL;
 
-  /**
-   * iterating over the list
-   */
+  /* iterating over the list */
   for (Node *current = &elem1; current != NULL; current = current->next) {
     printf("%d\n", current->data);
   }
