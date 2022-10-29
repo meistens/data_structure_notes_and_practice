@@ -1,0 +1,15 @@
+* Linked List Personal Practice Repo
+** What are linked lists(refresher)
+They are similar to arrays but differ as data are
+not stored but linked using [[https://www.tutorialspoint.com/cprogramming/c_pointers.htm][pointers]]
+
+A list is called a node, a node contains the data
+and addresd of the node.
+
+This section contain files that invokes the functions
+created in the algorithm folder.
+
+** Credits
+1. [[https://www.geeksforgeeks.org/][geeksforgeeks]]
+2. C Programming Language: A Modern Approach
+3. Sedgewick's books on algorithms in C

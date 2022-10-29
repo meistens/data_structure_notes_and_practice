@@ -1,0 +1,19 @@
+* Algorithm Summary
+
+** Insert Node At The Beginning Of An Existing List
+*** Time Complexity: O(1)
+Reason: There is a pointer to the head node, means we
+are only inserting a new node to an existing list, not
+rebuild it.
+
+** Insert Node After An Existing List
+*** Time Complexity: O(1)
+Reason: Since the previous node is already given as an
+argument in a method, no need to iterate to find the
+previous node.
+
+** Insert Node At The End Of A List
+*** Time Complexity: O(n)
+Reason: There is a loop iterating from beginning
+to the end of the list, meaning the operation is not
+
