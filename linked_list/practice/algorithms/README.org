@@ -17,3 +17,7 @@ previous node.
 Reason: There is a loop iterating from beginning
 to the end of the list, meaning the operation is not
 
+** Delete Node At The Beginning Of An Existing List
+*** Time Complexity: O(n)
+Reason: traverses through the list to find the node in
+question
