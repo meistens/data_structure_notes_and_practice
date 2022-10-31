@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * description: delete a node from a list
@@ -25,6 +26,34 @@ void delNode(Node **head, int pos) {
         if (prev == NULL)
           break;
         temp = temp->next;
+      }
+    }
+  }
+}
+
+/**
+ * description: delete a node dynamically
+ *
+ */
+
+void delDynamic(struct Node **head, int rand) {
+  struct Node *temp;
+
+  if ((*head)->data == rand) {
+    temp = *head;
+    *head = (*head)->next;
+    free(temp);
+  } else {
+    struct Node *current = *head;
+    while (current->next != NULL) {
+      if (current->next->data == rand) {
+        temp = current->next;
+        /* node discontinued */
+        current->next = current->next->next;
+        free(temp);
+        break;
+      } else {
+        current = current->next;
       }
     }
   }
