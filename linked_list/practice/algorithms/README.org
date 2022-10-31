@@ -21,3 +21,7 @@ to the end of the list, meaning the operation is not
 *** Time Complexity: O(n)
 Reason: traverses through the list to find the node in
 question
+
+** Delete Node Anywhere
+*** Time Complexity: O(n)
+Reason: traverses through the list to find and delete the node
